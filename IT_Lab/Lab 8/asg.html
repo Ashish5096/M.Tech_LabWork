@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="asg8.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Portfolio Tracker<small> Stock Price</small></h2>
+      <ul class="responsive-table">
+        <li class="table-header">
+          <div class="col col-1">S.No</div>
+          <div class="col col-2">Stock Name</div>
+          <div class="col col-3">Qty</div>
+          <div class="col col-4">Buy Price</div>
+          <div class="col col-5">Market Price</div>
+          <div class="col col-6">Profit/Loss</div>
+          <div class="col col-7">PnL(%)</div>
+        </li>
+        <li class="table-row">
+          <div class="col col-1" data-label="S.No.">1</div>
+          <div class="col col-2" data-label="Stock Name">Stock 1</div>
+          <div class="col col-3" data-label="Qty">2</div>
+          <div class="col col-4" data-label="Buy Price">$0</div>
+          <div class="col col-5" data-label="Market Price">$0</div>
+          <div class="col col-6" data-label="Profit/Loss">$0</div>
+          <div class="col col-7" data-label="PnL(%)">0%</div>
+        </li>
+        <li class="table-row">
+          <div class="col col-1" data-label="S.No.">2</div>
+          <div class="col col-2" data-label="Stock Name">Stock 2</div>
+          <div class="col col-3" data-label="Qty">4</div>
+          <div class="col col-4" data-label="Buy Price">$0</div>
+          <div class="col col-5" data-label="Market Price">$0</div>
+          <div class="col col-6" data-label="Profit/Loss">$0</div>
+          <div class="col col-7" data-label="PnL(%)">0%</div>
+        </li>
+        <li class="table-row">
+          <div class="col col-1" data-label="S.No.">3</div>
+          <div class="col col-2" data-label="Stock Name">Stock 3</div>
+          <div class="col col-3" data-label="Qty">1</div>
+          <div class="col col-4" data-label="Buy Price">$0</div>
+          <div class="col col-5" data-label="Market Price">$0</div>
+          <div class="col col-6" data-label="Profit/Loss">$0</div>
+          <div class="col col-7" data-label="PnL(%)">0%</div>
+        </li>
+        <li class="table-row">
+          <div class="col col-1" data-label="S.No.">4</div>
+          <div class="col col-2" data-label="Stock Name">Stock 4</div>
+          <div class="col col-3" data-label="Qty">5</div>
+          <div class="col col-4" data-label="Buy Price">$0</div>
+          <div class="col col-5" data-label="Market Price">$0</div>
+          <div class="col col-6" data-label="Profit/Loss">$0</div>
+          <div class="col col-7" data-label="PnL(%)">0%</div>
+        </li>
+        <li class="table-row">
+          <div class="col col-1" data-label="S.No.">5</div>
+          <div class="col col-2" data-label="Stock Name">Stock 5</div>
+          <div class="col col-3" data-label="Qty">3</div>
+          <div class="col col-4" data-label="Buy Price">$0</div>
+          <div class="col col-5" data-label="Market Price">$0</div>
+          <div class="col col-6" data-label="Profit/Loss">$0</div>
+          <div class="col col-7" data-label="PnL(%)">0%</div>
+        </li>
+        <li class="table-row">
+          <div class="col col-1">Equity:-</div>
+          <strong><div class="col col-2" data-label="Equity"></div></strong>
+          <div class="col col-3"></div>
+          <div class="col col-4"></div>
+          <div class="col col-5"></div>
+          <div class="col col-6" data-label="Total Profit/Loss">Total Profit/Loss:-</div>
+          <strong><div class="col col-7" data-label="T_PnL">$0</div></strong>
+        </li>
+      </ul>
+    </div>
+    <center><button class="refresh"><span>Update</span></button></center>
+    <script src="buy_price_generator.js"></script>
+    <script src="asg8.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+{
+	"Stock_Market_Prices_At_Timestamp": {
+		"T1":{
+			"Stock_1":16.34,
+			"Stock_2":11.12,
+			"Stock_3":22.19,
+			"Stock_4":65.45,
+			"Stock_5":32.81
+		},
+	
+		"T2":{
+			"Stock_1":25.13,
+			"Stock_2":29.14,
+			"Stock_3":22.56,
+			"Stock_4":29.89,
+			"Stock_5":27.90
+		},
+
+		"T3":{
+			"Stock_1":6.12,
+			"Stock_2":5.67,
+			"Stock_3":4.38,
+			"Stock_4":2.9,
+			"Stock_5":1.9
+		},
+
+		"T4":{
+			"Stock_1":65.1,
+			"Stock_2":82.81,
+			"Stock_3":74.32,
+			"Stock_4":58.76,
+			"Stock_5":61.21
+		},
+
+		"T5":{
+			"Stock_1":78.56,
+			"Stock_2":17.32,
+			"Stock_3":4.45,
+			"Stock_4":55.71,
+			"Stock_5":21.23
+		}
+	}
+}
