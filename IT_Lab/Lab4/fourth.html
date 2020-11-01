@@ -1,0 +1,89 @@
+<html>
+<head>
+<title> Selling Chart</title>
+<link rel="stylesheet" href="p1.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+</head>
+
+<body> 
+<div style="text-align:center;">
+<table id="t1">
+		 <tr>
+    		<th>Current Market Price</th>
+  		</tr>
+		<tr id=cur>
+    		<td>118</td>
+  		</tr>
+</table>
+
+    
+<table id="t2">
+		 <tr>
+    		<th>Buy Price</th>
+    		<th>Sell price</th>
+  		</tr>
+  		 <tr id="1">
+    		<td id="2">120</td>
+    		<td id="3">124</td>
+  		</tr>
+  	    
+  	     <tr id="1">
+    		<td id="2">110</td>
+    		<td id="3">128</td>
+  		</tr>
+  		
+  		 <tr id="1">
+    		<td id="2">100</td>
+    		<td id="3">130</td>
+  		</tr>
+  		
+  		 <tr id="1">
+    		<td id="2">90</td>
+    		<td id="3">132</td>
+  		</tr>
+  		 <tr id="1">
+    		<td id="2">88</td>
+    		<td id="3">134</td>
+  		</tr>
+  		 <tr id="1">
+    		<td id="2">90</td>
+    		<td id="3">139</td>
+  		</tr>
+	</table>
+	</div> <button class="but" type="button" >Update</button> 
+	
+</body>
+<script>
+
+$(document).ready(function(){
+    $(".but").click(function(){
+    	var one = $( "#1:first" );
+   		var col1=one.find("td:eq(0)").html();
+   		var col2=one.find("td:eq(1)").html();
+   		var col3=parseInt(col1);
+   		var col4=parseInt(col2);
+   		if(col3===col4){
+   			$("#1").remove();
+   			$("#cur").text(avg);
+   		}
+   		else{
+   			var var1 =Math.floor(Math.random()*(col3-col4+1)+col4);
+   			var var2 =Math.floor(Math.random()*(col3-col4+1)+col4);
+   			while(var2<var1){
+   				var var2 =Math.floor(Math.random()*(col3-col4+1)+col4);
+   			}
+   			$("#2:first" ).text(var1);
+   			$("#3:first" ).text(var2);
+   			if(var1==var2)
+   			{
+   			$("#1").remove();
+   			$("#cur").text(var1);
+   			}
+   		}
+    });
+    });
+
+</script>
+</html>

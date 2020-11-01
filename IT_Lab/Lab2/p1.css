@@ -1,0 +1,21 @@
+table{
+	border-collapse: collapse;
+	width: 60%;
+	
+}
+tr.Total {display: none;}
+
+
+
+tr:nth-child(even) {
+  background-color: #eeeff2;
+}
+
+tr:nth-child(odd) {
+  background-color: #dfe1e7;
+}
+
+th{
+	background-color: black;
+	color: white;
+}
